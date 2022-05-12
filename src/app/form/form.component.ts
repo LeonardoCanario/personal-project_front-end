@@ -32,6 +32,11 @@ export class FormComponent implements OnInit {
         Validators.maxLength(15),
         ]
       ],
+      age:['',[
+        Validators.required,
+        Validators.maxLength(2),
+      ]
+    ]
     })
   }
 

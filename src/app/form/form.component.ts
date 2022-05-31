@@ -36,12 +36,16 @@ export class FormComponent implements OnInit {
         Validators.required,
         Validators.maxLength(2),
       ]
-    ]
+    ],
+    phone:['', [
+      Validators.required,
+    ]]
     })
   }
 
   signup(){
     const newUser = this.signupForm.getRawValue();
+    console.log({newUser});
   }
 
 }
